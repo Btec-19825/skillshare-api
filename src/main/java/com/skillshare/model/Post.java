@@ -31,7 +31,7 @@ public class Post {
     private Set<String> likedBy = new HashSet<>();
     private Set<String> unlikedBy = new HashSet<>();
 
-    private int likes = 0;
+    private int likes = 0; //like
     private int unlikes = 0;
 
 }

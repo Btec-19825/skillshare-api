@@ -82,7 +82,7 @@ public class PostController {
         }).orElseThrow();
     }
 
-    @PutMapping("/{postId}/comments/{commentId}")
+    @PutMapping("/{postId}/comments/{commentId}") 
     public Post updateComment(
         @PathVariable String postId,
         @PathVariable String commentId,

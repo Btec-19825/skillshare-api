@@ -72,7 +72,7 @@ public class PostController {
         return urls;
     }
 
-    @PostMapping("/{postId}/comments")
+    @PostMapping("/{postId}/comments") //
     public Post addComment(@PathVariable String postId, @RequestBody Comment comment) {
         return postRepository.findById(postId).map(post -> {
             comment.setId(UUID.randomUUID().toString());
@@ -82,7 +82,7 @@ public class PostController {
         }).orElseThrow();
     }
 
-    @PutMapping("/{postId}/comments/{commentId}") 
+    @PutMapping("/{postId}/comments/{commentId}")     
     public Post updateComment(
         @PathVariable String postId,
         @PathVariable String commentId,

@@ -25,7 +25,7 @@ public class LearningPlanController {
     }
 
     @PutMapping("/{id}")
-    public LearningPlan updatePlan(@PathVariable String id, @RequestBody LearningPlan updated) {
+    public LearningPlan updatePlan(@PathVariable String id, @RequestBody LearningPlan updated) {   
         return planRepository.findById(id).map(plan -> {
             plan.setUsername(updated.getUsername());
             plan.setTopic(updated.getTopic());

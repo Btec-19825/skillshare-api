@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class LearningPlan {
+public class LearningPlan {   
 
     @Id
     private String id;

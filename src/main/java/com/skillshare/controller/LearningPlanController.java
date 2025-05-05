@@ -37,7 +37,7 @@ public class LearningPlanController {
     }
 
     @DeleteMapping("/{id}")
-    public void deletePlan(@PathVariable String id) {
+    public void deletePlan(@PathVariable String id) {     
         planRepository.deleteById(id);
     }
 }

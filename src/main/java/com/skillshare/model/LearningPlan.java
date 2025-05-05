@@ -15,7 +15,7 @@ public class LearningPlan {
     private String id;
 
     private String username;
-    private String topic;
+    private String topic;   
     private String resources;  
     private String deadline;   
     private String status;     

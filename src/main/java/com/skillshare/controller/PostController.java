@@ -80,7 +80,7 @@ public class PostController {
             post.getComments().add(comment);
             return postRepository.save(post);
         }).orElseThrow();
-    }
+    }  
 
     @PutMapping("/{postId}/comments/{commentId}")     
     public Post updateComment(

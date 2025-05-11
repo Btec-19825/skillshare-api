@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/user")
-public class UserController {
+public class UserController {   
 
     @GetMapping
     public Map<String, Object> user(@AuthenticationPrincipal OAuth2User principal) {

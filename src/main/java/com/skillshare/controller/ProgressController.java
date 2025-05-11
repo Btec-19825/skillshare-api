@@ -14,7 +14,7 @@ public class ProgressController {
     @Autowired
     private ProgressRepository progressRepository;
 
-    @GetMapping
+    @GetMapping  
     public List<Progress> getAll() {
         return progressRepository.findAll();
     }
